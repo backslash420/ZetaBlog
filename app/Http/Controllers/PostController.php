@@ -7,8 +7,10 @@ use App\Post;
 
 class PostController extends Controller
 {
-    public function post_all(){
-    	$posts=Post::all();
-    	return $posts;
+    public function all_post(){
+    	$posts=Post::with('user','category')->get();
+    	return response()->json([
+            'posts'=>$posts
+        ],200);
     }
 }

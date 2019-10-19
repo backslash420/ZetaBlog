@@ -89,13 +89,13 @@
             </router-link>
           </li>
             <li class="nav-item">
-            <a href="../widgets.html" class="nav-link">
+            <router-link to="/post-list" class="nav-link">
               <i class="nav-icon fa fa-th"></i>
               <p>
                 Post
                
               </p>
-            </a>
+            </router-link>
           </li>
       </ul>
       </nav>
